@@ -31,8 +31,8 @@
   * Goto -> **Github Actions** -> New WorkFlow -> Create your own
     * RepoName/GitHub/workflow/main.yml 
     
-    ```
-  name: Static Website
+    ```yml
+    name: Static Website
     on:
         push:
     branches:
