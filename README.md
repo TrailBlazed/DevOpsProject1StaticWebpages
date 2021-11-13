@@ -1,4 +1,5 @@
 # DevOps Project1 : Static Webpages using AWS S3 
+### My Static Website: http://devopsproject1staticwebsite.s3-website-us-east-1.amazonaws.com/
 ## Steps :
 ### 1.Login from IAM
 * Create **User** with S3FullAccess Policy.
