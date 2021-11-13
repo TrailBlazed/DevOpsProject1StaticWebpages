@@ -54,6 +54,8 @@
       - name: Deploy static site to S3 bucket
      Your bucker name
         run: aws s3 sync . s3://<BucketName> --delete
+        
+        
      </pre>
   
   
