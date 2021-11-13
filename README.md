@@ -1,4 +1,4 @@
-# DevOpsProject1StaticWebpages
+# DevOps Project1 : Static Webpages using AWS S3 
 ## Steps :
 ### 1.Login from IAM
 * Create **User** with S3FullAccess Policy.
