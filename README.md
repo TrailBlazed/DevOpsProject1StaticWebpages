@@ -32,15 +32,13 @@
     * RepoName/GitHub/workflow/main.yml 
     <pre>
   name: Static Website
-
-on:
-  push:
+    on:
+        push:
     branches:
       - main
-
-jobs:
-  staticwebsite_aws:
-    runs-on: ubuntu-latest
+    jobs:
+        staticwebsite_aws:
+        runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -50,14 +48,13 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-# aws-region
+     aws-region
           aws-region: us-east-1
 
       - name: Deploy static site to S3 bucket
-# Your bucker name
+     Your bucker name
         run: aws s3 sync . s3://<BucketName> --delete
-   
-  </pre>
+     </pre>
   
   
   
