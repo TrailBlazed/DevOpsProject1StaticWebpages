@@ -8,6 +8,7 @@
 * Create S3 bucket
 * Go to **Permissions** -> Block public access (bucket settings) -> Edit ->Uncheck -> Block All Public Access
 * Bucket policy ->Edit
+<pre>
     {
     "Version": "2012-10-17",
     "Statement": [
@@ -19,7 +20,7 @@
         }
     ]
   }
-  
+  </pre>
   * Go to -> **Properties** -> Enable Static Website
   
   ### 2. Github Repo
@@ -28,7 +29,8 @@
     * goto ->Secrets
     * New Repo Secrets -> AWS_Access_Key and AWS_Secret_Key(from the csv downloaded for the User)
   * Goto -> **Github Actions** -> New WorkFlow -> Create your own
-    * RepoName/GitHub/workflow/main.yaml 
+    * RepoName/GitHub/workflow/main.yml 
+    <pre>
   name: Static Website
 
 on:
@@ -55,7 +57,7 @@ jobs:
 # Your bucker name
         run: aws s3 sync . s3://<BucketName> --delete
    
-  
+  </pre>
   
   
   
