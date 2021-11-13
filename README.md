@@ -30,7 +30,8 @@
     * New Repo Secrets -> AWS_Access_Key and AWS_Secret_Key(from the csv downloaded for the User)
   * Goto -> **Github Actions** -> New WorkFlow -> Create your own
     * RepoName/GitHub/workflow/main.yml 
-    <pre>
+    
+    ```
   name: Static Website
     on:
         push:
@@ -56,7 +57,7 @@
         run: aws s3 sync . s3://<BucketName> --delete
         
         
-     </pre>
+     ```
   
   
   
