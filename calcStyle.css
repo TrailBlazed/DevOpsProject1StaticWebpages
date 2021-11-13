@@ -48,3 +48,33 @@ td:active{
 	background-color: #e0e0d1;
 	border-radius: 20px;
 }
+.center .btns button{
+	height: 155px;
+	width: 170px;
+	border-radius: 5px;
+	border: none;
+	margin: 0 10px;
+	border: 2px solid white;
+	font-size: 60px;
+	font-weight: 500;
+	padding: 0 10px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+  }
+  .center .btns button:first-child{
+	color: #fff;
+	background: none;
+  }
+  .btns button:first-child:hover{
+	background: white;
+	color: black;
+  }
+  .center .btns button:last-child{
+	background: white;
+	color: black;
+  }
+  .center .btns{
+	   margin-top: 20px;
+	   margin-left: 150px;
+	 }
